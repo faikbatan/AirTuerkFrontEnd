@@ -1,0 +1,28 @@
+<form [formGroup]="searchForm" (ngSubmit)="SearchVorgang" >
+  <fieldset>
+    <legend>Search Vorgang</legend>    
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">Başlangıç Tarihi</label>
+      <input type="text" class="form-control" id="VonDatum" name="VonDatum" formControlName="VonDatum" aria-describedby="emailHelp"
+        placeholder="Enter Datum">
+        <!--<small id="emailHelp" class="form-text text-muted"
+          *ngIf="searchForm.get('BisDatum').hasError('Required')&& searchForm.get('BisDatum').touched">This field is required</small>-->
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label mt-4">Bitiş Tarihi</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Datum" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-lg btn-primary btn-block" [disabled]="!searchForm.valid" type="submit">Search</button>
+    </div>
+    
+
+
+
+
+
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

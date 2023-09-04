@@ -1,0 +1,23 @@
+<div class="form-group">
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+    placeholder="Enter email">
+  <small id="emailHelp" class="form-text text-muted">Aramak için yazınız..</small>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Von</th>
+      <th scope="col">Nach</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>    
+    <tr *ngFor="let flugstraecken of flugstraeckens">
+      <td>{{flugstraecken.von}}</td>
+      <td>{{flugstraecken.nach}}</td>
+      <td><div class="input-group mb-3">
+        <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
